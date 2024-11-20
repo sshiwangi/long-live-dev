@@ -9,13 +9,23 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "long-live-dev.helloWorld",
-        "title": "Hello World"
+        "command": "longlivedev.startTimer",
+        "title": "Start Timer"
+      },
+      {
+        "command": "longlivedev.pauseTimer",
+        "title": "Pause Timer"
+      },
+      {
+        "command": "longlivedev.resetTimer",
+        "title": "Reset Timer"
       }
     ]
   },
